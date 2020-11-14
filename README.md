@@ -1,5 +1,5 @@
 ## docker-vdirsyncer
-A docker container which syncs your CalDAV/CardDAV calendars/addressbooks periodically.
+A docker container (deabian based) which syncs your CalDAV/CardDAV calendars/addressbooks periodically.
 
 This docker app uses [pimutils/vdirsyncer](https://vdirsyncer.pimutils.org/) to synchronize your CalDAV/CardDAV calendars/addressbooks between two servers.
 
