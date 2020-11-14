@@ -18,9 +18,10 @@ Be happy! The container will synchronize your calendars/addressbooks every 15 mi
 version: '3'
 services:
 
-  worker:
-    image: kaergel/vdirsyncer
+  vdirsyncer:
+    image: zedred/vdirsyncer
+    container_name: vdisyncer
     volumes:
       - ./your_config_file:/home/vds/.config/vdirsyncer/config
-    restart: always
+    restart: unless-stopped
 ```
