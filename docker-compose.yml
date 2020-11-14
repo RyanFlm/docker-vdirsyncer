@@ -1,8 +1,8 @@
 version: '3'
 services:
 
-  worker:
-    image: kaergel/vdirsyncer
+  vdirsyncer:
+    image: zedred/vdirsyncer
     volumes:
       - ./config:/home/vds/.config/vdirsyncer/config
-    restart: always
+    restart: unless-stopped
